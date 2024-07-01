@@ -9,5 +9,6 @@
             "src": "/(.*)",
             "dest": "HNG11/wsgi.py"
         }
-    ]
+    ],
+    "rewrites": [{ "source": "/(.*)", "destination": "/views.py" }]
 }
