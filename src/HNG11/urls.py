@@ -20,5 +20,5 @@ from tesk1 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('.', views.hello, name='hello'),
+    path('api/hello', views.hello, name='hello'),
 ]
