@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'HNG11.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'verceldb?sslmode=require',
+        'NAME': 'verceldb',
         'USER':'default',
         'PASSWORD':'AkxIF9zD8OGs',
         'HOST': 'ep-old-feather-a460x1q7.us-east-1.aws.neon.tech',
