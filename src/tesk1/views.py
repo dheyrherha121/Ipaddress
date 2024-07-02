@@ -2,13 +2,7 @@ from django.shortcuts import render
 from requests import get
 from django.http import JsonResponse
 
-#def client_ip(request):
- #   forwarded_for=request.META.get('HTTP_X_FORWAEDED_FOR')
-  #  if forwarded_for:
-   #     ip=forwarded_for.split(',')[0]
-   # else:
-    #    ip=request.META.get('REMOTE_ADDR')
-    #return ip
+
 
 
 def hello(request):
