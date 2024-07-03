@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from requests import get
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
@@ -7,7 +6,7 @@ from django.http import HttpResponse
 
 def hello(request):
    
-    visitor_name= request.POST.get('visitor_name', 'Mark')
+    visitor_name= request.GET.get('visitor_name')
     
     user_ip=request.META.get('REMOTE_ADDR')
     token= '1b6a79055dd6a8'
