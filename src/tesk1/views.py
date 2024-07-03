@@ -9,9 +9,9 @@ def hello(request):
     visitor_name= request.GET.get('visitor_name')
     
     #client_ip=request.META.get('REMOTE_ADDR')
-    apikey='c6fa6d83950f4c05b22a0ef4526b5eff' 
-    ip_url=get(f"https://api.ipgeolocation.io/ipgeo?apiKey={apikey}").json()
-    ip=ip_url.get("ip")
+    #apikey='c6fa6d83950f4c05b22a0ef4526b5eff' 
+    ip_url=get("https://ipinfo.io/json?apiKey=1b6a79055dd6a8").json()
+    ip=ip_url.get('ip')
     city=ip_url.get("city")
 
     api_key = "43155ad1b40cf402395c590aab20fac1"
